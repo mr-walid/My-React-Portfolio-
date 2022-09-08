@@ -1,0 +1,81 @@
+header {
+    height: auto;
+    padding: 7rem;
+    overflow: hidden;
+}
+.header_container{
+    text-align: center;
+    height: 100vh;
+    position: relative;
+   
+}
+/* ***********************CTA************* */
+
+.cta{
+    margin-top:2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+
+/* ***********************Header Socials************* */
+.header_social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header_social::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: #4db5ff;
+}
+/* ***********************image************* */
+.me {
+    background: linear-gradient(#4db5ff, transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 0 1.5rem ;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ***********************Scroll************ */
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+/* **************************************Media (medium devices)************************* */
+@media screen and (max-width : 1024px) {
+    header {
+       height: auto;
+    }
+ }
+ /* **************************************Media (small devices)************************* */
+@media screen and (max-width : 600px) {
+    
+    header{
+        height:auto ;
+    }
+   
+     .header_social,
+     .scroll_down{
+        display: none;
+     }
+}
